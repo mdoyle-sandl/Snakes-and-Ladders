@@ -25,7 +25,7 @@ In addition to the features in the source URL.
 * As this is a game of pure chance, once snakes and ladders are implemented, might be interesting to calculate the odds of winning from a given board setup.
 
 ### Usage notes
-* Standard VS2017 .net core
+* Standard VS2017 .net core class library.
 * Instantiate a new Board class for each game, passing one or move token names (strings).
 * Use Move(token, moves) to move an arbirtray number of moved (but limited to number of options on the dice.)
 * Use RollAndMove(token) to roll the dice and move accordingly.
