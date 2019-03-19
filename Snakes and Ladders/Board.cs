@@ -3,6 +3,18 @@ using System.Linq;
 
 namespace SnakesAndLaddersLib
 {
+
+	/// <summary>Possible outcomes of moving a token.</summary>
+	public enum MoveResult
+	{
+		Ok,
+		YouWon,
+		GameOver,
+		InvalidMove,
+		InvalidToken,
+		Error
+	}
+
 	/// <summary>The game board</summary>
 	public class Board
 	{
@@ -70,6 +82,9 @@ namespace SnakesAndLaddersLib
 			}
 		}
 
+		/// <summary>Rolls the dice and moves the token.</summary>
+		/// <param name="token">The token to move.</param>
+		/// <returns>A MoveResult.</returns>
 		public MoveResult RollAndMove(string token)
 		{
 			Dice.Roll();
@@ -77,13 +92,5 @@ namespace SnakesAndLaddersLib
 		}
 	}
 
-	public enum MoveResult
-	{
-		Ok,
-		YouWon,
-		GameOver,
-		InvalidMove,
-		InvalidToken,
-		Error
-	}
+
 }
