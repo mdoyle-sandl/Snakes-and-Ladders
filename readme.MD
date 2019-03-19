@@ -5,13 +5,16 @@
  
 > How did you approach the problem?  
 
-May main goal is to capture the game-rules in this library so that the UI coder doesn't have to, while at the same time allowing for a flexiable UI.
+May main goal is to capture the game-rules in this library so that the UI coder doesn't have to, while at the same time allowing for a flexiable UI to be implemented later.
+
+Coded as a C# MS-VS2017.net core library project and an Nunit tests project, rougly alligned to the use-cases. 
+I didn't code a UI.
 
 > How did you make key design decisions and what alternatives did you consider?  
 
-* I decided to return status-codes from my "Action" methods and limit exceptions; makes the lib easier to use.
+* I decided to return status-codes from my "Action" methods and "swallow" most exceptions; makes the lib easier to use.
 * Expose Move(token, moves) so UI can optionally show dice roll before moving, and to simplify testing.
-* Used methods to act on the board, properties are read only, again for ease-of-use.
+* Used methods to act on the board while properties are read only, again for ease-of-use.
 * Decided to use a basic types (sting,int,dict) to store most of internal state, instead of something more complex, this could be improved later if needed.
 * The implemenation is not thread safe.
 * I couldn't come up with a good way to unit test the Dice class.
@@ -25,7 +28,7 @@ In addition to the features in the source URL.
 * As this is a game of pure chance, once snakes and ladders are implemented, might be interesting to calculate the odds of winning from a given board setup.
 
 ### Usage notes
-* Standard VS2017 .net core class library.
+
 * Instantiate a new Board class for each game, passing one or move token names (strings).
 * Use Move(token, moves) to move an arbirtray number of moved (but limited to number of options on the dice.)
 * Use RollAndMove(token) to roll the dice and move accordingly.
