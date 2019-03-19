@@ -1,4 +1,4 @@
-h3.Snakes and ladders library
+h3. Snakes and ladders library
  
  By Michael Doyle <mdoyle@mdoyle.org>
  RE:  Developer Technical Test
@@ -24,7 +24,7 @@ In addition to the features in the source URL.
 * A move counter or leader board functionality.
 * As this is a game of pure chance, once snakes and ladders are implemented, might be interesting to calculate the odds of winning from a given board setup.
 
-h3.Usage notes
+h3. Usage notes
 * Standard VS2017 .net core
 * Instantiate a new Board class for each game, passing one or move token names (strings).
 * Use Move(token, moves) to move an arbirtray number of moved (but limited to number of options on the dice.)
