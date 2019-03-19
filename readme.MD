@@ -6,7 +6,7 @@
 > How did you approach the problem?  
 
 May main goal is to capture the game-rules in this library so that the UI coder doesn't have to, while at the same time allowing for a flexiable UI.
-Simple library class + unit tests rougly matching requirements.
+VS/C# library project & unit tests project rougly matching requirements document. I didn't code a UI.
 
 > How did you make key design decisions and what alternatives did you consider?  
 
