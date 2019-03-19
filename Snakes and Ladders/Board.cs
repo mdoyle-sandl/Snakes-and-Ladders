@@ -3,7 +3,6 @@ using System.Linq;
 
 namespace SnakesAndLaddersLib
 {
-
 	/// <summary>Possible outcomes of moving a token.</summary>
 	public enum MoveResult
 	{
