@@ -5,9 +5,9 @@
  
 > How did you approach the problem?  
 
-May main goal is to capture the game-rules in this library so that the UI coder doesn't have to, while at the same time allowing for a flexiable UI.
+May main goal is to capture the game-rules in this library so that the UI coder doesn't have to, while at the same time allowing for a flexiable UI to be implmented later.
 
-This is implemted as a C# MS-VS2017.net core library project and an Nunit tests project, rougly alligned to the requirements document. 
+Coded as a C# MS-VS2017.net core library project and an Nunit tests project, rougly alligned to the use-cases. 
 I didn't code a UI.
 
 > How did you make key design decisions and what alternatives did you consider?  
