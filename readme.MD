@@ -5,7 +5,7 @@
  
 > How did you approach the problem?  
 
-May main goal is to capture the game-rules in this library so that the UI coder doesn't have to, while at the same time allowing for a flexiable UI to be implemented later.
+My main goal is to capture the game-rules in this library so that the UI coder doesn't have to, while at the same time allowing for a flexiable UI to be implemented later.
 
 Coded as a C# MS-VS2017.net core library project and an Nunit tests project, rougly alligned to the use-cases. 
 I didn't code a UI.
